@@ -23,23 +23,26 @@ def main():
     screen = turtle.Screen()
     screen.colormode(255)
     screen.bgcolor(231, 230, 231)
-    screen.title('Share of Gold Medals in Tokyo Olympics, 2 August 2021')
+    screen.title("Share of Gold Medals in Tokyo Olympics, 2 August 2021")
     turtle.setup(width=750, height=600)
 
     # title
     text = turtle.Turtle()
-    text.shape('turtle')
-    text.color('black')
+    text.shape("turtle")
+    text.color("black")
     move_turtle(text, 0, 245)
-    text.write('Share of Gold Medals in Tokyo Olympics',
-               font=('Courier', 20, 'bold'), align='center')
+    text.write(
+        "Share of Gold Medals in Tokyo Olympics",
+        font=("Courier", 20, "bold"),
+        align="center",
+    )
     move_turtle(text, 0, 215)
-    text.write('2 August 2021', font=('Courier', 17, 'bold'), align='center')
+    text.write("2 August 2021", font=("Courier", 17, "bold"), align="center")
     text.hideturtle()
 
     # pie
     pie = turtle.Turtle()
-    set_turtle(pie, (231, 230, 231), 'light grey')
+    set_turtle(pie, (231, 230, 231), "light grey")
     move_turtle(pie, -125, -280)
     pie.begin_fill()
     pie.circle(230)
@@ -60,15 +63,27 @@ def main():
     # The remaining segments (9, excluding Netherlands)
     # Calculated by diving the # gold medals by 360%
     degree = (
-        10.8, 18, 18,
-        32.4, 36, 39.6,
-        50.4, 61.2, 82.8,
+        10.8,
+        18,
+        18,
+        32.4,
+        36,
+        39.6,
+        50.4,
+        61.2,
+        82.8,
     )
 
     colour = (
-        (98, 98, 99), (158, 72, 13), (38, 69, 121),
-        (113, 173, 71), (90, 155, 213), (254, 193, 0),
-        (164, 165, 164), (237, 124, 48), (68, 114, 196),
+        (98, 98, 99),
+        (158, 72, 13),
+        (38, 69, 121),
+        (113, 173, 71),
+        (90, 155, 213),
+        (254, 193, 0),
+        (164, 165, 164),
+        (237, 124, 48),
+        (68, 114, 196),
     )
 
     # Create a loop to draw 9 segments one after another
@@ -94,29 +109,29 @@ def main():
     """
 
     # Netherlands
-    label(-156, 120, '3%')
+    label(-156, 120, "3%")
     # Italy
-    label(-192, 110, '3%')
+    label(-192, 110, "3%")
     # S_Korea
-    label(-230, 90, '5%')
+    label(-230, 90, "5%")
     # France
-    label(-280, 55, '5%')
+    label(-280, 55, "5%")
     # G_Britain
-    label(-300, -20, '9%')
+    label(-300, -20, "9%")
     # ROC
-    label(-300, -125, '10%')
+    label(-300, -125, "10%")
     # Australia
-    label(-250, -220, '11%')
+    label(-250, -220, "11%")
     # Japan
-    label(-120, -235, '14%')
+    label(-120, -235, "14%")
     # USA
-    label(15, -130, '17%')
+    label(15, -130, "17%")
     # China
-    label(-35, 70, '23%')
+    label(-35, 70, "23%")
 
     # legend_boder
     boder = turtle.Turtle()
-    set_turtle(boder, '#F0F0F0', '#F0F0F0')
+    set_turtle(boder, "#F0F0F0", "#F0F0F0")
     boder.begin_fill()
     move_turtle(boder, 170, 140)
     for _ in range(2):
@@ -135,21 +150,21 @@ def main():
 
     # Call the functions to write the country names
     # colour, y coordinate of the legend of each country and its name
-    country(colour[8], 120, 'China')
-    country(colour[7], 85, 'USA')
-    country(colour[6], 50, 'Japan')
-    country(colour[5], 15, 'Australia')
-    country(colour[4], -20, 'ROC')
-    country(colour[3], -55, 'G. Britain')
-    country(colour[2], -90, 'France')
-    country(colour[1], -125, 'S. Korea')
-    country(colour[0], -160, 'Italy')
-    country((153, 115, 1), -195, 'Netherlands')
+    country(colour[8], 120, "China")
+    country(colour[7], 85, "USA")
+    country(colour[6], 50, "Japan")
+    country(colour[5], 15, "Australia")
+    country(colour[4], -20, "ROC")
+    country(colour[3], -55, "G. Britain")
+    country(colour[2], -90, "France")
+    country(colour[1], -125, "S. Korea")
+    country(colour[0], -160, "Italy")
+    country((153, 115, 1), -195, "Netherlands")
 
     # Wipe the screen out.
     screen.exitonclick()
 
 
 # --------------------------- Call the Main Function --------------------------
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

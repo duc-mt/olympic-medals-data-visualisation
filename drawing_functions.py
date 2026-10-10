@@ -17,7 +17,7 @@ import turtle
 
 # ---------------------------- Function Definitions ---------------------------
 def set_turtle(animal, pencolour, fillcolour):
-    animal.shape('turtle')
+    animal.shape("turtle")
     animal.color(pencolour, fillcolour)
     animal.speed(0)
 
@@ -41,14 +41,14 @@ def segment(pie, degree):
 
 def label(x, y, percentage):
     label = turtle.Turtle()
-    set_turtle(label, 'black', 'black')
+    set_turtle(label, "black", "black")
     label.pensize = 0
     label.begin_fill()
     move_turtle(label, x, y)
     # Create a border around the percentage
     if len(percentage) < 3:
         a = 29
-    else:       # For cases where it is greater than 9%
+    else:  # For cases where it is greater than 9%
         a = 45
     for _ in range(2):
         label.fd(a)
@@ -60,8 +60,8 @@ def label(x, y, percentage):
     label.hideturtle()
     label.fd(-2)
     label.lt(90)
-    label.color('white')
-    label.write(percentage, font = ('Courier', 20))
+    label.color("white")
+    label.write(percentage, font=("Courier", 20))
 
 
 def country(colour, y2, name):
@@ -73,7 +73,7 @@ def country(colour, y2, name):
         country.fd(10)
         country.lt(-90)
     country.end_fill()
-    move_turtle(country, 215, y2 - 15) 
-    country.color('black')
-    country.write(name, font = ('Courier', 15))
+    move_turtle(country, 215, y2 - 15)
+    country.color("black")
+    country.write(name, font=("Courier", 15))
     country.hideturtle()
