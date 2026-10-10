@@ -1,17 +1,18 @@
+"""
+==============================================================================
+Module Name:   drawing_functions.py
+Description:   Source module drawing_functions.py.
+Author:        Mai Tan Duc <ducmai.network@gmail.com>
+Created:       2026-10-10
+Version:       1.0.0
+License:       MIT
+==============================================================================
+Usage:         python3 drawing_functions.py [options]
+Notes:         Requires Python 3.8+
+==============================================================================
+"""
+
 #!/usr/bin/python3
-
-#
-# File:         drawing_functions.py
-# Author:       Tan Mai Tan Duc
-# Email:        tan.duc.work@gmail.com
-# Date:         5-Aug-21
-# Description:  A list of user-defined functions that assist in drawing
-#   I hereby declare that I completed this work without any improper help
-#   from a third party and without using any aids other than those cited.
-#
-
-
-# ------------------------------- Module Import -------------------------------
 import turtle
 
 
