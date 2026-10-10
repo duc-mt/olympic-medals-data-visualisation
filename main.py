@@ -2,7 +2,7 @@
 
 #
 # File:         main.py
-# Author:       Tan Duc Mai
+# Author:       Tan Mai Tan Duc
 # Email:        tan.duc.work@gmail.com
 # Date:         5-Aug-21
 # Description:  Use Turtle Graphics to draw a pie chart representing the medals
